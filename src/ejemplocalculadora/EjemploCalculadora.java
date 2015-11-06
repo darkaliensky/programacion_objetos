@@ -41,7 +41,11 @@ public class EjemploCalculadora {
                 System.out.println("La multiplicación de los números es " +resultado);
             } else if (eleccion == 4){
                 division = cal.dividirNumeros();
-                System.out.println("La suma de los números es " +division);
+                if (division == 0.0){
+                    System.out.println("La división por 0 no existe");
+                } else {
+                    System.out.println("La división de los números es " +division);
+                }
             }
         }
     }

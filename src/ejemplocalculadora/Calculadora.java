@@ -33,7 +33,11 @@ public class Calculadora {
     
     public double dividirNumeros(){
         int division;
+        if (num2 == 0){
+            return 0.0;
+        }
         division = num1 / num2;
+        
         return division;
     }
 }
